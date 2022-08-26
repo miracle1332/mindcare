@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마이페이지</title>
+    <link rel="shortcut icon" href="images/nostress.png">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/mindCare_common.css">
+    <link rel="stylesheet" href="css/mypage.css">
+</head>
+<body>
+    <!-- 건너뛰기 링크 시작 -->
+    <a id="skipNav" href="#">본문바로가기</a>
+    <!-- 건너뛰기 링크 종료 -->
+    <!--전체 wrapper영역 시작-->
+    <div id="wrapper">
+       <!--헤더 영역 시작-->
+       <header>
+        <div id="mainheader">
+            <div class="headers" id="headersFirst">
+                <div id="headerLi1">
+                    <a href="index.html">
+                        <img src="images/마인드케어 로고.jpg" alt="mindcare logo">
+                    </a>
+                </div>
+            </div>
+            <div class="headers" id="headersSecond">
+                <h2 class="hidden">메인메뉴</h2>
+                <ul class="mainMenu">
+                    <li class="dropdown" id="dropdownFirst"><a href="introduce.html" class="dropbtn">마인드케어 소개</a></li>
+                    <li class="dropdown"><a href="#" class="dropbtn">프로그램</a>
+                        <ul class="dropdown_content">
+                            <li><a href="#">올인원</a></li>
+                            <li><a href="#">스타터</a></li>
+                            <li><a href="#">원데이</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="find_solution.html" class="dropbtn">솔루션 찾기</a>
+                    </li>
+                    <li class="dropdown"><a href="cheerup.html" class="dropbtn">Cheer Up</a>
+
+                    </li>
+                    <li class="dropdown"><a href="information.html" class="dropbtn">FAQ</a>
+                        <ul class="dropdown_content">
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="review.html">마인드케어 후기</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="headers" id="headers4">
+            <ul class="smallLink">
+                <li><a href="#">로그인</a></li>
+                <li><a href="mindCare_join.html">회원가입</a></li>
+                <li><a href="mypage.html">마이페이지</a></li>
+            </ul>
+        </div>
+    </header>
+    <!--헤더 영역 종료-->
+        <section id="mypageArea">
+            <div id="mypageIn">
+                <div id="myInfo">
+                    <img src="images/강태오.png" alt="member">
+                    <div id="mypage_name">
+                        <h2><span>[강태오]</span>님의 My Page</h2>
+                    </div>
+                    <button id="logout">로그아웃</button>
+                </div>
+                <div class="line"></div>
+                <div id="mypageBox">
+                    <div class="mypageBox_smallBox">
+                        <div class="smallBox_title">
+                            <h2>예약일정</h2>
+                        </div>
+                        <div class="smallbox_detail">
+                            <ul>
+                                <li>- 예약된 일정이 없습니다.</li>
+                            </ul>
+                        </div>
+                        <a href="#" class="clickA">
+                            <div class="clickBox">
+                                구매한 이용권 예약하기
+                            </div>
+                        </a>
+                    </div>
+                    <div class="mypageBox_smallBox">
+                        <div class="smallBox_title">
+                            <h2>내 이용권</h2>
+                        </div>
+                        <div class="smallbox_detail">
+                            <ul>
+                                <li>- 버럭이 스타터 프로그램</li>
+                                <li>- (원데이)마음의 불안탐구</li>
+                            </ul>
+                        </div>
+                        <a href="#" class="clickA">
+                            <div class="clickBox">
+                                이용권 잔여기간 확인하기
+                            </div>
+                        </a>
+                    </div>
+                    <div class="mypageBox_smallBox">
+                        <div class="smallBox_title">
+                            <h2>감정변화 분석</h2>
+                        </div>
+                        <div class="smallbox_detail">
+                            <ul>
+                                <li>♡지난주 보다 스트레스 수치가 감소하였어요!</li>
+                            </ul>
+                        </div>
+                        <a href="#" class="clickA">
+                            <div class="clickBox">
+                                감정일지 기록하러 가기
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="line"></div>
+                <div id="mypageDetail">
+                    <h2>활동기록</h2>
+                    <div id="mypageDetailBox-1">
+                        <div class="scoreBox">
+                            <h1>0</h1>
+                            <h3>마인드콩</h3>
+                        </div>
+                        <div class="scoreBox">
+                            <h1>0</h1>
+                            <h3>공감받은</h3>
+                        </div>
+                        <div class="scoreBox">
+                            <h1>0</h1>
+                            <h3>응원받는</h3>
+                        </div>
+                        <div class="scoreBox">
+                            <h1>0</h1>
+                            <h3>응원하는</h3>
+                        </div>
+                    </div>
+                    <div id="mypageDetailBox-2">
+                        <section class="mypageSection" id="mypageSection-1">
+                            <h2><a href="#mypageSection-1">나의 사연</a></h2>
+                            <ul>
+                                <li>작성한 사연이 없습니다.</li>
+                            </ul>
+                        </section>
+                        <section class="mypageSection" id="mypageSection-2">
+                            <h2><a href="#mypageSection-2">나의 댓글</a></h2>
+                            <ul>
+                                <li>작성한 댓글이 없습니다.</li>
+                            </ul>
+                        </section>
+                        <section class="mypageSection" id="mypageSection-3">
+                            <h2><a href="#mypageSection-3">Cheer-up 북마크</a></h2>
+                            <ul>
+                                <li>저장한 북마크가 없습니다.</li>
+                            </ul>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </section>
+             <!--푸터 영역 시작-->
+            <footer id="footer">
+                <div id="footerInner">
+                        <div id="sentence">
+                            <p>믿을 수 있는 심리 전문가들이 만든 마인드케어를 통해 내 마음의 전문가가 되어보세요!</p>
+                        </div>
+                    <div class="guide">
+                        <h2 class="hidden">사이트 이용안내</h2>
+                        <ul>
+                            <li><a href="#">마인드케어</a></li>
+                            <li><a href="#">개인정보 보호정책</a></li>
+                            <li><a href="#">이용안내</a></li>
+                        </ul>
+                    </div>
+                    <div class="adr">
+                        <ul>
+                            <li>서울시 평화구 마음로 5 마인드케어빌딩</li>
+                            <li>- 전화: 02-247-1111</li>
+                            <li>- E-MAIL:<a href="mailto:lyneen@naver.com">mailto:lyneen@naver.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+            <!--푸터 영역 종료-->
+    
+</body>
+</html>

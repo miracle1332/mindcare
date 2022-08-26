@@ -1,0 +1,138 @@
+@charset "utf-8";
+
+#memberArea {
+    height: 900px;
+    color: rgb(43, 52, 103);
+    width: 1690px;
+    margin: 0 auto;
+}
+#memberArea > h2 {
+    padding-top: 60px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.formSign {
+    margin-left: 440px;
+    color: #48688a;
+}
+#joinForm{
+    border-radius: 10px;
+    width: 800px;
+    height: 650px;
+    display: block;
+    margin-left: 440px;
+    padding: 0 10px 0;
+    background-color: rgb(243, 243, 243);
+}
+#joinForm label {
+    width: 150px;
+    display: inline-block;
+}
+
+#joinForm > fieldset {
+    font-size: 1.2em;
+}
+#joinForm > fieldset > p {
+    margin-bottom: 27px;
+}
+#joinForm > fieldset > p > a {
+    background-color: rgb(235, 233, 233);
+    font-size: 0.75em;
+    padding: 10px;
+    border-radius: 50px;
+}
+#joinForm > fieldset > p > a:hover{
+    color: #e03963;
+}
+#joinForm > fieldset > p > input {
+    padding: 10px;
+    margin-left:5px;
+    border: 1px solid rgb(31, 31, 31);
+    box-shadow: 1px 1px 1px #ccc;
+    border-radius: 20px;
+}
+#pFrist {
+    margin-top: 30px;
+}
+.require{
+    display: inline-block;
+    width: 13px;
+    height: 12px;
+    white-space: nowrap;
+    text-indent: 10px;
+    overflow: hidden;
+}
+.require::before{
+    font-family: "webcafeIcon";
+    content: "s";
+    color: #e03963;
+    position: relative;
+    left: -15px;
+    top:-5px;
+    padding-left: 3px;
+}
+#addressP {
+    position: relative;
+    width: 100%;
+    height: 100px;
+}
+#zipcode{
+    display: inline-block;
+    width: 200px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+#address {
+    display:inline-block;
+    position: absolute;
+    top:60px;
+    left: 153px;
+}
+#span1 {
+    display: block;
+}
+#spanm {
+    font-size: 0.8em;
+}
+.btnJoinArea {
+    display: block;
+    text-align: center;
+}
+.btnJoinArea > button {
+    padding: 10px;
+    font-size: 1em;
+}
+#mailingOk, #mailingNo {
+    display: inline-block;
+    width: 20px;
+}
+#mailingOk > input, #mailingNo > input {
+    width: 50px;
+}
+.btnOk {
+    margin-right: 10px;
+    background-color: #ffffff;
+    border: 1px solid #e7e7e7;
+    color: #3b3b3b;
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+.btnOk:hover {
+    background-color: #e6e6e6;
+    border: 1px solid #dadada;
+    color: #ffffff;
+}
+.btnCancel {
+    background-color: #ccc;
+    border: 1px solid  #ccc;
+    color: #85878a;
+    border-radius: 20px;
+    cursor: pointer;
+ 
+}
+.btnCancel:hover {
+    background-color: rgb(136, 135, 135);
+    border: 1px solid  #ccc;
+    color: #e2e1e1;
+}

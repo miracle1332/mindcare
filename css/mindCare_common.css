@@ -1,0 +1,309 @@
+@charset "utf-8";
+/*초기화*/
+html, body, div, header, nav, section, aside, article, footer, figure, figcaption, legend, ul, ol, li, dl, dt, dd, h1, h2, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style: none;
+}
+fieldset {
+    border: 0;
+}
+/*숨김 콘텐츠*/
+.hidden, legend, caption {
+    position: absolute;
+    left: -9999px;
+}
+/*웹 폰트*/
+@font-face {
+    font-family: "Nanum";
+    font-weight: 400;
+    src: url("font/NanumSquareRoundR.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Satisfy";
+    font-weight: 400;
+    src: url("font/Satisfy-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: "NanumBold";
+    font-weight: 600;
+    src: url("font/NanumGothicBold.eot?#iefix") format("embedded-opentypef"),
+         url("font/NanumGothicBold.woff") format("woff"),
+         url("font/NanumGothicBold.ttf") format("truetype");
+}
+@font-face {
+    font-family: "NanumEX";
+    font-weight: 400;
+    src: url("font/NanumGothicExtraBold.eot?#iefix") format("embedded-opentypef"),
+         url("font/NanumGothicExtraBold.woff") format("woff"),
+         url("font/NanumGothicExtraBold.ttf") format("truetype");
+}
+/*도형글꼴*/
+@font-face {
+    font-family: "webcafeIcon";
+    font-weight: normal;
+    src: url("font/webcafeIcon.eot?#iefix") format("embedded-opentypef"),
+         url("font/webcafeIcon.woff") format("woff"),
+         url("font/webcafeIcon.ttf") format("truetype"),
+         url("font/webcafeIcon.svg#webcaferegular") format("svg");
+}
+/*링크 스타일*/
+a:link {
+    color: #343434;
+    text-decoration: none;
+}
+a:visited {
+    color: #161616;
+}
+a:hover, a:focus {
+    color: rgb(129, 129, 129);
+    text-decoration: none;
+}
+/*기본 스타일*/
+body {
+    font-family: "Nanum";
+    color: #000;
+    background-color: #fff;
+    font-size: 1em; /*1.2px*/
+    line-height: 1.2;
+    overflow-x: hidden;
+}
+/*건너뛰기 링크*/
+#skipNav {
+    position: absolute;
+    left: -9999px;
+}
+#skipNav:focus {
+    left: 50%;
+    margin: 3px 0 0 -3em;
+    padding: 5px 15px;
+    background-color: rgb(170, 255, 198);
+    color: #fff;
+    outline: 0;
+    z-index: 10;
+}
+/*전체적인 레이아웃 설계*/
+ #careImg,header, #contentsArea,footer,#wrapper {
+    box-sizing: border-box;
+    width: 1690px;
+    margin: 0 auto;
+}
+#wrapper {
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: center top;
+    
+}
+
+
+/* 헤더 영역 시작 */
+header {
+    width: 1690px;
+    height: 270px;
+    position: relative;
+}
+header > .headers {
+    display: inline-block;
+}
+#headersFirst {
+    margin-top: 30px;
+    overflow: hidden;
+    display: inline-block;
+}
+#headersFirst > div {
+   float: left;
+}
+.headers #headerLi1 {
+    padding-left: 30px;
+    position: relative;
+    width: 160px;
+}
+.headers img {
+    width: 152px;
+    height: 70px;
+    border-radius: 20px;
+}
+.headers img:hover {
+    box-shadow: 2px 2px 2px rgb(37, 120, 255);
+}
+#headersSecond {
+    margin-top: 10px;
+    display: inline-block;
+}
+.mainMenu {
+    height: 50px;
+    margin-left: 30px;
+    padding-top: 5px;
+}
+.mainMenu > li {
+    float: left;
+}
+.mainMenu > li > a  {
+    font-size: 1.2em;
+    font-weight: bold;
+    color:rgb(14, 14, 14);
+    letter-spacing: 2px;
+
+}
+#dropdownFirst {
+    width: 240px;
+}
+.mainMenu > li:first-child a {
+    border-left: 1px solid #1c5425;
+}
+
+.mainMenu > li > a:hover::after, .mainMenu > li > a:focus::after {
+    height: 2px;
+    background-color: rgb(228, 228, 228);
+    width: 100%;
+    top: 12px;
+}
+.mainMenu ul {
+    z-index: 10;
+    white-space: nowrap;
+    position: absolute;
+}
+.mainMenu ul a {
+    padding: 5px;
+}
+.mainMenu li.dropdown {
+    width: 178px;
+}
+.mainMenu > li.dropdown > a {
+    display: block;/*내 부모 영역안에서 전체차지*/
+    padding: 10px;
+    text-align: center;
+}
+.mainMenu li.dropdown > a:hover, .mainMenu li.dropdown:hover .dropbtn {
+    background-color: rgb(255, 255, 255);
+    color: rgb(25, 56, 122);    
+    border-radius: 20px 20px 0 0;
+    background-color: rgb(255, 226, 230);
+}
+.mainMenu .dropdown_content li > a:hover{
+    color: rgb(6, 8, 97);   
+    font-weight: bold;
+    cursor: pointer; 
+}
+.mainMenu li.dropdown:hover ul.dropdown_content {
+    display: block;
+    text-align: center;
+}
+.mainMenu ul.dropdown_content {
+    display: none;
+    width: 178px;
+    background-color: rgba(255, 255, 255, 0);
+    z-index: 10;
+    line-height: 1.8;
+    font-size: 1.12em;
+    background-color: rgb(255, 226, 230);
+    border-radius: 0 0 20px 20px;
+    border-top: 1px solid #fff;
+}
+#headers4{
+    width: 250px;
+    height: 20px;
+    border-radius: 10px;
+    margin-left: 10px;
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    left: 1420px;
+    padding-top: 10px;
+}
+#headers4 > ul {
+    width: 100%;
+    width: 250px;
+    height: 20px;
+}
+#headers4 li {
+    float: left;
+    margin-right: 15px;
+}
+#headers4 a{ 
+    font-size: 1.1em;
+}
+#headers4 a:hover {
+    color: rgb(32, 127, 182);
+    font-weight: bold;
+}
+/*푸터 영역 시작*/
+#footer {
+    background:rgba(0, 0, 0, 0.863);
+    color: azure;
+    padding: 10px 0;
+}
+#footerInner {
+    width: 1440px;
+    height: 300px;
+    margin: 0 auto;
+    display: flex;
+}
+#footerInner > div {
+    flex-direction: row;
+}
+#sentence {
+    width: 500px;
+    margin-right: 90px;
+    padding-left: 50px;
+}
+#sentence > p {
+    margin-top:110px;
+    text-align: center;
+    font-size: 1.5em;
+    line-height: 1.7;
+}
+.guide {
+  
+    width: 150px;
+    margin-right: 90px;
+}
+.guide > ul {
+    text-align: center;
+    margin-top: 100px;
+}
+.guide > ul> li{
+    font-size: 0.9em;
+    margin-bottom: 30px;
+}
+.guide > ul > li > a{
+    color: #dfdeb9;
+}
+
+.adr {
+    width: 400px;
+    color: #dfdeb9;
+    font-size: 0.9em;
+}
+.adr > ul {
+    text-align: center;
+    margin-top: 100px;
+}
+.adr > ul > li {
+    margin-bottom: 30px;
+}
+.adr > ul > li > a{
+    color: #afd3df;
+}
+#fixed_bar {
+    width: 80px;
+    height: 270px;
+    z-index: 100;
+    position: fixed;
+    display: inline;
+    padding-left: 1510px;
+}
+#menu_box {
+    width: 80px;
+    height: 240px;
+}
+.menu_box_button {
+    margin-bottom: 10px;
+    padding: 13px;
+    border-radius: 15px;
+    border: none;
+    background-color: lightpink;
+    font-size: 0.9em;
+}

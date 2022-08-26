@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="ohhyerin">
+    <meta name="keywords" content="mind,health">
+    <meta name="description" content="심리케어">
+    <meta name="robots" content="all">
+    <link rel="shortcut icon" href="images/nostress.png">
+    <title>마인드케어</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/mindCare_common.css">
+    <link rel="stylesheet" href="css/mindCare_main.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+        <!-- 건너뛰기 링크 시작 -->
+        <a id="skipNav" href="#">본문바로가기</a>
+        <!-- 건너뛰기 링크 종료 -->
+        <!--전체 wrapper영역 시작-->
+        <div id="promotionArea">
+            <p>회원가입 시 25% 할인쿠폰 제공</p>
+            <button id="promotionClose">X</button>
+        </div>
+        <div id="wrapper">
+            <!--헤더 영역 시작-->
+            <header>
+                <div id="mainheader">
+                    <div class="headers" id="headersFirst">
+                        <div id="headerLi1">
+                            <a href="index.html">
+                                <img src="images/마인드케어 로고.jpg" alt="mindcare logo">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="headers" id="headersSecond">
+                        <h2 class="hidden">메인메뉴</h2>
+                        <ul class="mainMenu">
+                            <li class="dropdown" id="dropdownFirst"><a href="introduce.html" class="dropbtn">마인드케어 소개</a></li>
+                            <li class="dropdown"><a href="#" class="dropbtn">프로그램</a>
+                                <ul class="dropdown_content">
+                                    <li><a href="#">올인원</a></li>
+                                    <li><a href="#">스타터</a></li>
+                                    <li><a href="#">원데이</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a href="find_solution.html" class="dropbtn">솔루션 찾기</a>
+                            </li>
+                            <li class="dropdown"><a href="cheerup.html" class="dropbtn">Cheer Up</a>
+        
+                            </li>
+                            <li class="dropdown"><a href="information.html" class="dropbtn">FAQ</a>
+                                <ul class="dropdown_content">
+                                    <li><a href="#">FAQ</a></li>
+                                    <li><a href="review.html">마인드케어 후기</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="headers" id="headers4">
+                    <ul class="smallLink">
+                        <li><a href="#">로그인</a></li>
+                        <li><a href="mindCare_join.html">회원가입</a></li>
+                        <li><a href="mypage.html">마이페이지</a></li>
+                    </ul>
+                </div>
+            </header>
+            <!--헤더 영역 종료-->
+            <!--래프트바 고정 영역-->
+            <div id="fixed_bar">
+                <div id="menu_box">
+                    <input type="button" value="이용권 구매" class="menu_box_button">
+                    <input type="button" value="상당원 채팅" class="menu_box_button">
+                    <input type="button" value="이용 가이드" class="menu_box_button">
+                </div>
+            </div>
+            <!--래프트바 고정 영역 종료-->
+            <!--비주얼 사진 영역 시작-->
+            <div id="slide_canvas">
+                <div id="slide_container">
+                    <div id="careImg">
+                        <img src="images/slide1.jpg" class="slideImg" alt="slideImg">
+                        <img src="images/slide2.jpg" class="slideImg" alt="slideImg">
+                        <img src="images/slide3.jpg" class="slideImg" alt="slideImg">
+                        <img src="images/slide4.jpg" class="slideImg" alt="slideImg">
+                        <img src="images/slide5.jpg" class="slideImg" alt="slideImg">
+                    </div>
+                </div>
+                    <!--각 이미지에 대한 설명글을 담고 있는 패널-->
+                <div class="slider_text_panel">
+                    <div class="slider_text">
+                        <h2>오프라인 심리케어센터</h2>
+                        <p>강남점, 신촌점, 안양점 오픈</p>
+                        <button class="slide_button">자세히보기</button>
+                    </div>
+                    <div class="slider_text">
+                        <h2>전문가와의 해석상담</h2>
+                        <p>심리검사하고 해석상담으로 진짜 내마음 알아보기</p>
+                        <button class="slide_button">자세히보기</button>
+                    </div>
+                    <div class="slider_text">
+                        <h2>텍스트 테라피 멤버십 <br>첫 결제 50% 할인</h2>
+                        <p>마음도 데일리로 케어하세요.</p>
+                        <button class="slide_button">자세히 보기</button>
+                    </div>
+                    <div class="slider_text">
+                        <h2>1등 심리케어 앱 마인드카페</h2>
+                        <p>누적 회원 수 150만 달성!</p>
+                        <button class="slide_button">자세히보기</button>
+                    </div>
+                    <div class="slider_text">
+                        <h2>빠르게 심리상담 받는 꿀팁</h2>
+                        <p>상담사님과 일정이 안맞을 땐?</p>
+                        <button class="slide_button">자세히보기</button>
+                    </div>
+                </div>
+            </div>
+            <!--비주얼 사진 영역 종료-->
+            <!--메인콘텐츠 영역 시작-->
+            <div id="contentsArea">
+            <!--제품검색 및 제품사진, 설명 영역 시작-->
+                <section class="searchSection">
+                    
+                </section>
+                <div class="showProgram" id="showProgram1">
+                <h1 id="stressSmall">나에게 맞는 솔루션 찾기</h1>
+                <h2>무엇 때문에 스트레스 받고 있나요?</h2>
+                    <div id="stressBox">
+                        <div class="reasonBox">
+                            <h3 class="reason">완벽주의</h3>
+                            <p>"잘 해야만 해"</p>
+                            <img src="images/아이콘_완벽이.jpg" alt="perpect" class="stressKind">
+                        </div>
+                        <div class="reasonBox">
+                            <h3 class="reason">자존감</h3>
+                            <p>"미움받고 싶지 않아"</p>
+                            <img src="images/아이콘_물렁이.jpg" alt="selfesteem" class="stressKind">
+                        </div>
+                        <div class="reasonBox">
+                            <h3 class="reason">소외감</h3>
+                            <p>"외로워"</p>
+                            <img src="images/아이콘_고독이.jpg" alt="lonely" class="stressKind">
+                        </div>
+                        <div class="reasonBox">
+                            <h3 class="reason">불안</h3>
+                            <p>"그만 걱정하고 싶어"</p>
+                            <img src="images/아이콘_콩콩이.jpg" alt="fear" class="stressKind">
+                        </div>
+                        <div class="reasonBox">
+                            <h3 class="reason">분노</h3>
+                            <p>"자꾸만 화가나"</p>
+                            <img src="images/아이콘_버럭이.jpg" alt="angry" class="stressKind">
+                        </div>
+                    </div>
+                    <h2 class="goDetail"><a href="#">자세히 보러가기 →</a></h2>
+                </div>
+    
+                <div id="programArea">
+                    <div class="programDiv" id="programDiv1">
+                        <div class="programTitle" >
+                            <p>All-in-one</p>
+                            <h1>올인원 프로그램</h1>
+                            <p>힘든 마음의 근본적인 원인 파악부터 치유까지 한꺼번에!</p>
+                        </div>
+                        <div class="programImage">
+                            <div class="programImageDetail">
+                                <a href="#">
+                                    <img src="images/올인원_고독이.jpg" alt="all-in-one">
+                                    <div class="programIntroduce">
+                                        <h3>고독이 올인원 프로그램</h3>
+                                        <p>고독이를 위한 안전장비를 하나씩<br> 갖추고 세상으로 나아가 봐요!</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="programImageDetail">
+                                <a href="#">
+                                    <img src="images/올인원_물렁이.jpg" alt="all-in-one">
+                                    <div class="programIntroduce">
+                                        <h3>물렁이 올인원 프로그램</h3>
+                                        <p>사람들에게 끌려가지 않고 중심을 잡고 싶다면,<br> 물렁이 마스터 프로그램으로 내 마음의 전문가가 되어보세요!</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="programImageDetail">
+                                <a href="#">
+                                    <img src="images/올인원_콩콩이.jpg" alt="all-in-one">
+                                    <div class="programIntroduce">
+                                        <h3>콩콩이 올인원 프로그램</h3>
+                                        <p>나의 과거를 이해하고, 현재의 행동에 변화가 있다면,<br> 미래도 같이 변화할 거에요!</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="programDiv">
+                        <div class="programTitle">
+                            <p>Starter</p>
+                            <h1>스타터 프로그램</h1>
+                            <p>부담없는 가격으로 내마음속 악동 다루기의 핵심만!</p>
+                        </div>
+                        <div class="programImage">
+                            <div class="programImageDetail">
+                                <a href="#">
+                                    <img src="images/스타터_엄격이.jpg" alt="starter">
+                                    <div class="programIntroduce">
+                                        <h3>엄격이 스타터 프로그램</h3>
+                                        <p>성장과 목표달성을 위해 달려오느라 지쳐있나요?<br> 엄격이 스타터 프로그램으로 차근차근 극복해보세요!</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="programImageDetail">
+                                <a href="#">
+                                    <img src="images/스타터_버럭이.jpg" alt="starter">
+                                    <div class="programIntroduce">
+                                        <h3>버럭이 스타터 프로그램</h3>
+                                        <p>나도 모르게 버럭하고 후회했던 적이 있나요?<br>마인드케어를 통해 화를 '잘'내는 방법을 익혀보세요!</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="programImageDetail">
+                                <a href="#">
+                                    <img src="images/스타터_고독이.jpg" alt="starter">
+                                    <div class="programIntroduce">
+                                        <h3>고독이 스타터 프로그램</h3>
+                                        <p>스스로를 사랑하라! 어떻게 하는 걸까요?<br> 고독이 스타터 프로그램으로 방법을 익혀보세요</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <section id="newsArea">
+                    <div class="newsImg">
+                        <img src="images/news.jpg" alt="">
+                    </div>
+                    <div class="news">
+                       <ul>
+                            <li class="newsTitle">상담가 안내</li><li class="newsDetail">나에게 맞는 상담가 찾기</li>
+
+                            <li class="newsTitle">오프라인</li><li class="newsDetail">가까운 오프라인 지점 찾기</li>
+
+                            <li class="newsTitle">새 소식</li><li class="newsDetail">마인드케어 소식 업데이트</li>
+
+                            <li class="newsTitle">이용권 관련</li><li class="newsDetail">취소, 환불 안내</li>
+
+                       </ul>
+                    </div>
+                </section>
+                <div id="reviewArea">
+                    <div class="reviewBox">
+                        <div class="reviewTitle">
+                            <h3>"마인드케어를 사용하신 분들의"</h3>
+                            <h1>솔직한 후기</h1>
+                        </div>
+                        <div id="review_canvas">
+                            <img src="images/SImage_Left.gif" class="clickBtn" id="btn_left" alt="left_button">
+                            <div id="slide_review">
+                                <div class="reviewImage">
+                                    <img src="images/리뷰_고독이.jpg" class="review_slide_image" alt="review">
+                                    <img src="images/리뷰_물렁이.jpg" class="review_slide_image" alt="review">
+                                    <img src="images/리뷰_버럭이.jpg" class="review_slide_image" alt="review">
+                                    <img src="images/리뷰_엄격이.jpg" class="review_slide_image" alt="review">
+                                    <img src="images/리뷰_콩콩이.jpg" class="review_slide_image" alt="review">
+                                </div>
+                            </div>
+                            <img src="images/SImage_Right.gif" class="clickBtn" id="btn_right" alt="right_button">
+                        </div>
+                    </div>
+                </div>
+                <div class="howItWorks">
+                    <h2>How It Works</h2>
+                    <div class="howStep">
+                        <div class="stepBorder50">
+                            <h1 class="stepNumber">STEP 1</h1>
+                        </div>
+                        <div class="stepExplain">
+                            <h2>마인드케어 검사</h2>
+                            <p>마인드케어가 직접 만든 검사를 통해 내 마음을 힘들게하는 심리 패턴을 확인해보세요.</p>
+                        </div>
+                    </div>
+                    <div class="howStep">
+                        <div class="stepBorder50">
+                            <h1 class="stepNumber">STEP 2</h1>
+                        </div>
+                        <div class="stepExplain">
+                            <h2>나를 힘들게하는 심리패턴과 솔루션 확인</h2>
+                            <p>마인드케어는 엄격이, 콩콩이, 버럭이, 고독이, 물렁이 5가지 악동으로 심리패턴을 구분합니다.
+                                검사결과를 토대로 맞춤형 솔루션을 제공해드립니다.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="howStep">
+                        <div class="stepBorder50">
+                            <h1 class="stepNumber">STEP 3</h1>
+                        </div>
+                        <div class="stepExplain">
+                            <h2>맞춤형 전문 마인드케어 프로그램</h2>
+                            <p>전문가가 만든 나에게 꼭 맞는 프로그램을 통해 다양한 심리케어 콘텐츠를 경험해보세요.</p>
+                        </div>
+                    </div>
+                    <img src="images/usePhone.jpg" alt="usePhone" id="usePhone">
+                </div>
+            </div>
+        </div>
+            <!--메인콘텐츠 영역 종료-->
+
+            <!--푸터 영역 시작-->
+            <footer id="footer">
+                <div id="footerInner">
+                        <div id="sentence">
+                            <p>믿을 수 있는 심리 전문가들이 만든 마인드케어를 통해 내 마음의 전문가가 되어보세요!</p>
+                        </div>
+                    <div class="guide">
+                        <h2 class="hidden">사이트 이용안내</h2>
+                        <ul>
+                            <li><a href="#">마인드케어</a></li>
+                            <li><a href="#">개인정보 보호정책</a></li>
+                            <li><a href="#">이용안내</a></li>
+                        </ul>
+                    </div>
+                    <div class="adr">
+                        <ul>
+                            <li>서울시 평화구 마음로 5 마인드케어빌딩</li>
+                            <li>- 전화: 02-247-1111</li>
+                            <li>- E-MAIL:<a href="mailto:lyneen@naver.com">mailto:lyneen@naver.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+            <!--푸터 영역 종료-->
+
+        <!--전체 wrapper영역 종료-->
+</body>
+</html>

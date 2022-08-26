@@ -1,0 +1,408 @@
+@charset "utf-8";
+
+    /*animation: moongImg1 10s infinite, rotate 10s alternate infinite;
+}
+@keyframes moongImg1{
+    from {
+        opacity: 0;
+    }
+    to {
+       opacity: 1;
+    }
+}*/
+#promotionArea {
+    background-color: #d2f893;
+    height: 26px;
+    width: 1690px;
+    margin: 0 auto;
+    text-align: center;
+}
+#promotionArea p {
+    display: inline-block;
+    padding-top: 3px;
+}
+#promotionArea > #promotionClose {
+    background-color: rgb(223, 221, 221);
+    border: none;
+    cursor: pointer;
+}
+#headersThird {
+    height: 80px;
+    display: block;
+    position: relative;
+}
+#headersThird > div {
+    background-color: rgba(0, 0, 0, 0.158);
+    width: 1690px;
+    height: 500px;
+    margin-top: 55px;
+}
+#slide_canvas {
+    position: relative;
+    width: 900px;
+    margin: 0 auto;
+}
+#slide_container{
+    position: relative;
+    width: 900px;
+    height: 400px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+#careImg{
+    width: 6300px;
+    height: 400px;
+    position: relative;
+}
+#careImg > img {
+    width: 900px;
+    height: 400px;
+    float: left;
+}
+.slider_text_panel{
+    position: absolute;
+    top:20px;
+    left: 20px;
+}
+.slider_text{
+    position: absolute;
+    width: 700px;
+    top: 70px;
+    left: 60px;
+}
+.slider_text > h2, p{
+    margin-bottom: 10px;
+}
+.slider_text > h2 {
+    font-size: 2.2em;
+}
+.slider_text > p {
+    font-size: 1.4em;
+}
+.slider_text  > button {
+    width: 200px;
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+    background-color: #ffffff;
+}
+.infoLink {
+   position: absolute;
+   overflow: hidden;
+   top:230px;
+   left: 700px;
+   width: 500px;
+   z-index: 10;
+}
+.infoLink > li {
+    float: left;
+    margin-right: 18px;
+}
+.infoLink > li > button {
+    padding: 10px 20px 10px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 50px;
+    background-color: rgb(255, 255, 255);
+    font-size: 0.9em;
+    cursor: pointer;
+    color:rgba(10, 32, 41, 0.925);
+    font-weight: bold;
+}
+.infoLink > li > button:hover {
+    background-color: #171e2e;
+    color: aliceblue;
+}
+.infoLink > li > #light {
+    color: #8d8a8a;
+    font-weight: lighter;
+    background-color: rgba(164, 183, 201, 0.603);
+}
+#promoteProgram{
+    width: 900px;
+    height: 60px;
+    margin: 0 auto;
+
+}
+#promoteProgram > div {
+    text-align: center;
+    width: 900px;
+    height: 60px;
+    background-color: #cdf0b1;
+}
+#promoteProgram > div > p {
+    font-size: 1.1em;
+    color: #706d6d;
+    font-weight: lighter;
+    padding-top: 23px;
+}
+#showProgram1 { 
+    height: 560px;
+    padding-top: 80px;
+    padding-top: 150px;
+}
+
+#showProgram1 > h2 {
+    margin-bottom: 55px;
+    text-align: center;
+    font-size: 0.8em;
+}
+#stressBox {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.reasonBox {
+    width: 180px;
+    height: 180px;
+    flex-direction: row;
+    margin-right: 45px;
+    position: relative;
+    border-radius: 70px;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 2px #ccc;
+}
+.reasonBox > h3 {
+    padding-top: 15px;
+    color: rgb(46, 46, 46);
+}
+.reasonBox > p {
+    margin-top: 7px;
+    font-size: 0.8em;
+}
+#stressSmall {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 2em;
+    color: rgb(32, 32, 32);
+    margin-bottom: 15px;
+}
+.stressKind {
+    position: absolute;
+    width: 180px;
+    height:110px;
+    bottom: 0;
+    left: 0;
+    transition: all 1s;
+    border-radius: 65px 65px 0 0;
+}
+.stressKind:hover {
+    transform: scaleY(1.05);
+    cursor: pointer;
+}
+.goDetail {
+    margin-top: 100px;
+
+}
+.goDetail > a {
+    text-decoration: underline;
+    color: rgb(131, 131, 131);
+    font-weight: lighter;
+    font-size: 1.2em;
+}
+
+.howItWorks {
+    height: 820px;
+    padding-top: 90px;
+    position: relative;
+}
+
+#usePhone {
+    width: 440px;
+    height: 440px;
+    position: absolute;
+    top: 200px;
+    right: 200px;
+    display: inline-block;
+    border-radius: 50%;
+    opacity: 0.85;
+    box-shadow: 2px 2px 2px rgb(82, 82, 82);
+}
+.howItWorks > h2 {
+    display: block;
+    margin-bottom: 30px;
+    padding-left: 140px;
+    font-size: 1.8em;
+    color: rgb(10, 10, 10);
+}
+.howItWorks > .howStep {
+    width: 800px;
+    height: 200px;
+    margin-bottom: 10px;
+    display: flex;
+    margin-left: 100px;
+}
+.howStep > div {
+    flex-direction: row;
+}
+.howStep > .stepBorder50 {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-left: 20px;
+    background-color: rgb(17, 17, 17);
+}
+.howStep > .stepExplain {
+    width: 530px;
+    height: 130px;
+    margin-top: 30px;
+    margin-left: 40px;
+}
+.howStep > .stepExplain > h2 {
+    margin-bottom: 17px;
+}
+.howStep > .stepExplain > p {
+    font-size: 1.05em;
+    line-height: 1.45;
+    color: rgb(57, 57, 80);
+}
+.stepNumber{
+    text-align: center;
+    padding-top: 50px;
+    font-size: 1.2em;
+    color: #ccc;
+}
+#programArea {
+    height: 1140px;
+}
+.programImage > div {
+    flex-direction:row;
+}
+.programImage {
+    display: flex;
+    width: 1690px;
+    justify-content: center;
+
+}
+#programDiv1 {
+    margin-bottom: 50px;
+    padding-top: 60px;
+}
+.programTitle {
+    margin-bottom: 40px;
+    color: rgb(36, 36, 36);
+    text-align: center;
+}
+.programTitle > h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1.8em;
+}
+.programImageDetail {
+    width: 460px;
+    height: 350px;
+    text-align: center;
+}
+.programImageDetail img {
+    width: 300px;
+    border-radius: 10%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.programImageDetail img:hover {
+    width: 305px;
+}
+.programIntroduce:hover {
+    text-shadow: 1px 1px 1px rgb(196, 251, 255);
+    color: black;
+    font-size: 1.02em;
+}
+.programIntroduce > h3 {
+    margin-bottom: 4px;
+}
+
+#newsArea {
+    width: 1690px;
+    height: 250px;
+    background-color: rgba(19, 19, 19, 0.932);
+    color:black;
+    position: relative;
+}
+
+.newsImg {
+    display: inline-block;
+    width: 500px;
+    height: 250px;
+    margin-left: 360px;
+}
+#newsArea img{
+    width: 430px;
+    height: 250px;
+}
+.news{
+    position: absolute;
+    display: inline-block;
+    width: 600px;
+    height: 200px;
+    top:37px;
+    color: rgb(204, 201, 201);
+}
+.news li {
+    float: left;
+    margin-right: 30px;
+    font-size: 1.02em;
+    margin-bottom: 25px;
+}
+.newsTitle {
+    display: inline-block;
+    width: 160px;
+    text-align: center;
+}
+.newsDetail {
+    display: inline-block;
+    width: 300px;
+}
+#reviewArea {
+    height: 800px;
+    padding-top: 60px;
+}
+#review_canvas{
+    width: 1690px;
+    height: 480px;
+    text-align: center;
+
+}
+#slide_review {
+    width: 855px;
+    height: 480px;
+    position: relative;
+    margin: 0 auto;
+    display: inline-block;
+    overflow: hidden;
+}
+.clickBtn {
+    margin-bottom: 230px;
+    cursor: pointer;
+}
+.reviewImage {
+    width: 1445px;
+    height: 480px;
+    position: relative;
+}
+.reviewImage > img {
+    width: 270px;
+    margin-right: 15px;
+    box-shadow: 2px 2px 2px #ccc;
+    border-radius: 40px;
+    float: left;
+}
+.reviewBox {
+    margin-top: 120px;
+}
+.reviewTitle {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-bottom:60px;
+}
+.reviewTitle > h1:first-child {
+    margin-bottom: 5px;
+}
+.reviewTitle > h1 {
+    color: rgb(20, 20, 20);
+    font-weight: bold;
+    margin-top: 5px;
+}
+.reviewTitle > h3 {
+    font-weight: lighter;
+}
